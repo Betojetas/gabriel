@@ -36,7 +36,7 @@ if (isset($_POST['email'])) {
         $mail->Port = 465;
 
         $mail->setFrom('alberto@ingenieria2023.space', 'Eventos Corp');
-        $mail->addAddress('d.a.g.c.4652@gmail.com'); // Correo del usuario
+        $mail->addAddress($email); // Correo del usuario
 
         $mail->isHTML(true);
         $mail->Subject = 'Recuperación de Contraseña';
